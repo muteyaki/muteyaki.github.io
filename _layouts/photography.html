@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+<div class="photography">
+  <h1 class="photography-title">{{ page.title }}</h1>
+
+  {% if site.photography and site.photography.size > 0 %}
+    {% assign photo_sets = site.photography | sort: 'date' | reverse %}
+    <div class="photography-list">
+      {% for photo_set in photo_sets %}
+        <a class="photography-card" href="{{ photo_set.url | relative_url }}">
+          {% if photo_set.cover %}
+            <img class="photography-cover" src="{{ photo_set.cover | relative_url }}" alt="{{ photo_set.title }}">
+          {% endif %}
+          <div class="photography-card-content">
+            <h2>{{ photo_set.title }}</h2>
+            {% if photo_set.date %}
+              <time datetime="{{ photo_set.date | date_to_xmlschema }}">{{ photo_set.date | date: "%B %d, %Y" }}</time>
+            {% endif %}
+            {% if photo_set.description %}
+              <p>{{ photo_set.description }}</p>
+            {% endif %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="photography-empty">No photographs yet.</p>
+  {% endif %}
+</div>
