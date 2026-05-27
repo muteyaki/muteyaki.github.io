@@ -2,7 +2,7 @@
 layout: photo_set
 title: "秦皇岛 (Qinhuangdao)"
 date: 2023-01-01
-location: ""
+location: "China, Hebei"
 description: ""
 cover: /photography/bdh/bdh1.jpg
 images:
