@@ -24,8 +24,6 @@ images:
     caption: ""
   - src: /photography/kl/kl9.jpg
     caption: ""
-  - src: /photography/kl/kl10.jpg
-    caption: ""
   - src: /photography/kl/kl11.jpg
     caption: ""
   - src: /photography/kl/kl12.jpg
