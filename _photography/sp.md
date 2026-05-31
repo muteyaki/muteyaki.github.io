@@ -18,6 +18,8 @@ images:
     caption: ""
   - src: /photography/sp/sp6.jpg
     caption: ""
+  - src: /photography/sp/sp13.jpg
+    caption: ""
   - src: /photography/sp/sp7.jpg
     caption: ""
   - src: /photography/sp/sp8.jpg
